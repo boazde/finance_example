@@ -6,8 +6,8 @@ import altair as alt
 
 # Define the Streamlit app
 def app():
-    st.title("CSV File Viewer")
-    st.write("This app reads a CSV file and presents the data in a table.")
+    st.title("Finance Viewer")
+    st.write("This app can also filter and show analytics of the data.")
     
     # Load the CSV file
     file = "data.csv"

@@ -20,7 +20,11 @@ def app():
     st.write("Basic Statistics:")
     st.write(df.describe())
     
-
+    chart = alt.Chart(df).mark_bar().encode(
+    x='W-1',
+    y='count()'
+    )
+    st.altair_chart(chart, use_container_width=True)
     
 # Run the app
 if __name__ == "__main__":
